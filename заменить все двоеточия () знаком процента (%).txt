@@ -1,0 +1,23 @@
+Заменить все двоеточия () знаком процента (%)
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите русскоязычную строку:\t");
+            string a = Console.ReadLine();
+            int count = 0;
+            string b = s.Replace(":", "%");
+            Console.WriteLine($"Измененная строка: {b}");
+            for(int i = 0; i<s.Length; i++)
+            {
+                if (a[i] != b[i])
+                {
+                    count++;
+                }
+            }
+            Console.WriteLine($"\n Количество  замен {count}. \n");
+        }
+    }
+}
