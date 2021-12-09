@@ -1,0 +1,16 @@
+Дана строка, содержащая русскоязычный текст. Найти количество слов, начинающихся с буквы "о".
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите русскоязычную строку:\t");
+                  string s = Console.ReadLine();
+
+                  int count = s.Split().Where( x => x[0] == 'о').Count();
+
+             Console.WriteLine($"\n Количество слов, начинающихся с буквы 'о' равно {count}.\n");
+        }
+    }
+}
