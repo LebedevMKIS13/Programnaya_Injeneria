@@ -1,0 +1,14 @@
+В строке заменить все заглавные буквы строчными.
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Введите русскоязычную строку:\t");
+             string a = Console.ReadLine();
+             Console.Write("Измененная строка: ");
+            Console.WriteLine(new string(a.Select(x => Char.IsUpper(x) ? Char.ToLower(x) : x).ToArray()));
+        }
+    }
+}
